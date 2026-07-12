@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h2
+    {
+        background-color:beige;
+        color:black;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    .parent {
+        display: flex;
+        justify-content: flex-start; /* Placed side-by-side with NO automatic spacing */
+        border-radius: 10px inset lightgrey;
+        background-color: beige;
+        width:600px;
+        height:240px;
+    }
+    
+    .id1 {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .id1 img {
+        max-width: 100%;
+        height: auto;
+        display: block; /* Prevents a tiny default browser gap at the bottom of the image */
+    }
+    
+    
+</style>
+<body>
+
+    <header>
+        <h2> nav bar</h2>
+    </header>
+    <div class="parent">
+        <div class="id1">
+            <img src="../imgs/javaimg.jpg" alt="textimg" height="200" width="200">
+           
+        </div>
+        <div class="id1">
+
+            <h3>product details</h3>
+            <p><pre>name  :shoes</pre></p>
+            <p><pre>size  :12</pre></p>
+            <p><pre>price :900</pre></p>
+            <p>
+                <details>
+                    <summary>shoes know</summary>
+                    <p>dlkjdfcjdC,m ,dcndkjcjkDcjkdsc</p>
+                </details>
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

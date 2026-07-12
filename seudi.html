@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Form</title>
+
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+
+        }
+
+
+        .login-box {
+
+            width: 300px;
+
+            padding: 30px;
+
+            border: 2px solid black;
+
+            margin: 100px auto;
+
+            background-color: white;
+
+        }
+
+
+        h2 {
+
+            text-align: center;
+
+        }
+
+
+        label {
+
+            display: block;
+
+            margin-top: 15px;
+
+        }
+
+
+        input[type="email"],
+        input[type="password"] {
+
+            width: 90%;
+
+            padding: 10px;
+
+            margin-top: 5px;
+
+            border: 2px solid gray;
+
+        }
+
+
+
+        /* Focus pseudo-class */
+
+        input:focus {
+
+            outline: none;
+
+            border-color: blue;
+
+        }
+
+
+
+        /* Validation pseudo-class */
+
+        input:valid {
+
+            border-color: green;
+
+        }
+
+
+        input:invalid {
+
+            border-color: red;
+
+        }
+
+
+
+
+        /* Checkbox checked state */
+
+        input[type="checkbox"]:checked + label {
+
+            color: green;
+
+            font-weight: bold;
+
+        }
+
+
+
+
+        button {
+
+            width: 100%;
+
+            padding: 12px;
+
+            margin-top: 20px;
+
+            border: none;
+
+            cursor: pointer;
+
+        }
+
+
+
+
+        /* Enabled button */
+
+        button:enabled {
+
+            background-color: green;
+
+            color: white;
+
+        }
+
+
+
+        /* Disabled button */
+
+        button:disabled {
+
+            background-color: gray;
+
+            cursor: not-allowed;
+
+        }
+
+
+
+        /* Hover effect */
+
+        button:hover {
+
+            opacity: 0.8;
+
+        }
+
+
+    </style>
+
+
+</head>
+
+
+<body>
+
+
+<div class="login-box">
+
+
+    <h2>Login</h2>
+
+
+    <form>
+
+
+        <label>Email</label>
+
+        <input 
+        type="email"
+        placeholder="Enter email"
+        required>
+
+
+
+        <label>Password</label>
+
+        <input 
+        type="password"
+        placeholder="Enter password"
+        required>
+
+
+
+        <br><br>
+
+
+        <input 
+        type="checkbox"
+        id="remember">
+
+
+        <label for="remember">
+            Remember Me
+        </label>
+
+
+
+        <button>
+            Login
+        </button>
+
+
+        <button disabled>
+            Disabled Button
+        </button>
+
+
+    </form>
+
+
+</div>
+
+
+</body>
+
+</html>
